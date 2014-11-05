@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  get 'about_us'    => 'pages#about_us'
+  get 'pages/about_us'    => 'pages#about_us', as: 'about'
 
-  get 'contact_us'  => 'pages#contact_us'
+  get 'pages/contact_us'  => 'pages#contact_us', as: 'contact'
 
-  get 'services'      => 'pages#wacky_wednesday'
+  get 'pages/services'      => 'pages#wacky_wednesday'
 
   root to: 'pages#index'
 
